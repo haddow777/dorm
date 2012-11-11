@@ -4,7 +4,7 @@ Rhizomorph
 An ORM for node.js built for efficiency and flexibility.
 
 *Supported Databases:*
-# PostgreSQL
+ * PostgreSQL > 8
 
 ## License 
 
