@@ -1,0 +1,10 @@
+{
+    "db": { 
+        "connectionString": "postgres://postgres:test@localhost:5432/test"
+    },
+    "showSql":true,
+    "debugOutput" : false,
+    "useRowToJson": false,
+    "dialect":"postgresql"
+}
+
