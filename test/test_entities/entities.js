@@ -2,7 +2,7 @@ var dorm = require('../..')
   , Entity = dorm.Entity
   , Fields = dorm.Fields;
 
-var Node = Entity.create('node', 'nodes').define([
+var Node = Entity.create({type: 'node', table:'nodes'}).define([
     { id:Fields.PrimaryKeyField() },
     { name: Fields.StringField() }
 ]);
