@@ -1,6 +1,6 @@
 {
     "db": { 
-        "connectionString": "postgres://postgres:test@localhost:5432/test"
+        "connectionString": "postgres://dan:test@localhost:5432/dormtest"
     },
     "showSql":true,
     "debugOutput" : false,
