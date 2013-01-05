@@ -38,6 +38,6 @@ module.exports['test DomainEntityTest'] = function(beforeExit, assert) {
         assert.ok(instance.fkID === 15, 'Test Name');
     }
     
-    assert.doesNotThrow(defineTypes, 'Failed to not throw', 'This test is for all domainEntity Fields.')
+    assert.doesNotThrow(defineTypes, 'Failed to not throw', 'This test is for all domainEntity Fields.');
 } 
 
