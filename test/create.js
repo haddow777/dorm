@@ -1,4 +1,6 @@
 var dorm = require('..')
+  , dbg = require('../lib/debug')
+  , util = require('util')
   , e = require('./test_entities/entities');
 
 module.exports['test dorm.save(node)'] = function (beforeExit, assert) { 
@@ -7,16 +9,15 @@ module.exports['test dorm.save(node)'] = function (beforeExit, assert) {
     node.name = 'test node';                
    
     dorm.createTable(e.Node, function (err, res){
-        console.log(err);
-
         assert.ok(err==null);
 
         dorm.save(node, function(err,res) {
-            console.log('Node saved', res, err);
-            for (var i in node){
-                console.log(i,':',node[i]);
-            }
-            dorm.dropTable(e.Node, console.log);
+            assert.ok(res.id !== undefined);            
+    
+            dorm.dropTable(e.Node, function (err, res){
+                assert.isNull(err);
+                assert.isNotNull(res);
+            });
         });
     });
 };

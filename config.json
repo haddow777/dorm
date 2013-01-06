@@ -3,6 +3,7 @@
         "connectionString": "postgres://dan:test@localhost:5432/test"
     },
     "showSql":true,
+    "showLineNumbers":true,
     "debugOutput" : true,
     "useRowToJson": false,
     "dialect":"postgresql"

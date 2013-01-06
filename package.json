@@ -4,6 +4,7 @@
   "dependencies": {
     "pg":"0.6.x",
     "expresso":"*",
-    "sqlite3":"*"
+    "sqlite3":"*",
+    "deferred":"*"
   }
 }
