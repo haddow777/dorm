@@ -34,5 +34,4 @@ stub
         assert.ok(!fail);
     }).end();
 
-    dorm.createTable(e.Node).then(dorm.save(node)).then(
 };
