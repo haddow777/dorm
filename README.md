@@ -11,7 +11,7 @@ An ORM for node.js built for efficiency and flexibility.
 
 (The MIT License)
 
-Copyright (c) 2012 Daniel Werner &lt;dan.werner@gmail.com&gt;
+Copyright (c) 2013 Daniel Werner &lt;dan.werner@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
