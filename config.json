@@ -2,7 +2,7 @@
     "db": { 
         "connectionString": "postgres://postgres:test@localhost:5432/ebt"
     },
-    "showSql":true,
+    "showSql":false,
     "showLineNumbers":true,
     "debugOutput" : false,
     "useRowToJson": false,

@@ -1,22 +1,20 @@
 var dorm = require('../lib/dorm')
-  , e = require('../lib/domain/Entities')
+  , e = require('./test_entities/entities')
   , util = require('util');
 
-var handler = function(err, res){
-    console.log(err, util.inspect(res));
-    process.exit();
+module.exports["test: select UserRole"] = function (beforeExit, assert){
+	/*var handler = function(err, res){
+		
+	};
+	  
+	dorm.get(e.UserRole, {
+	        where:{
+	            name:{
+	              cmp:'=', value:'admin'
+	            }
+	        }
+	    }, handler);
+	    
+	dorm.get(e.UserRole, 1, handler);*/
 };
-  
-dorm.get(UserRole, {
-        where:{
-            name:{
-              cmp:'=', value:'admin'
-            }
-        }
-    }, handler);
-    
-dorm.get(UserRole, 1, handler);
-
-
-console.log(UserRole.getFieldDef('id'));
 

@@ -31,7 +31,7 @@ stub
         assert.isNotNull(win);
         return dorm.dropTable(e.Node);
     }, function (fail){
-        assert.ok(!fail);
+        assert.ok(fail);
     }).end();
 
 };

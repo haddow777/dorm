@@ -7,7 +7,7 @@ module.exports['test TestTest'] = function (beforeExit, assert) {
     assert.ok(true, 'This test will pass.');
 };
 
-module.exports['test DomainEntityTest'] = function(beforeExit, assert) {
+module.exports['test DomainEntityTest'] = function(beforeExit, assert) { 
     
     var instance;
     
@@ -19,7 +19,7 @@ module.exports['test DomainEntityTest'] = function(beforeExit, assert) {
         
         var SomeType = dorm.Entity.create({type:'SomeType', table:'some_table_here'});
         SomeType.define([
-            {id:F.PrimaryKeyField()},
+            {id:F.PrimaryKeyField()}, 
             {name:F.StringField()},
             {flag:F.BooleanField()},
             {cost:F.DecimalField()},
