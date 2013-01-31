@@ -1,8 +1,8 @@
 {
     "db": { 
-        "connectionString": "postgres://postgres:test@localhost:5432/ebt"
+        "connectionString": "postgres://dan:test@localhost:5432/test"
     },
-    "showSql":false,
+    "showSql":true,
     "showLineNumbers":true,
     "debugOutput" : false,
     "useRowToJson": false,
