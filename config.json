@@ -1,6 +1,6 @@
 {
     "db": { 
-        "connectionString": "postgres://dan:test@localhost:5432/test"
+        "connectionString": "postgres://postgres:test@localhost:5432/ebt"
     },
     "showSql":true,
     "showLineNumbers":true,
