@@ -1,7 +1,7 @@
 dorm
 ==========
 
-An ORM for node.js built for efficiency and flexibility.
+An ORM for node.js built for efficiency and flexibility. (but for now is very alpha!)
 
 *Supported Databases:*
  * PostgreSQL > 8
