@@ -3,9 +3,41 @@ dorm
 
 An ORM for node.js built for efficiency and flexibility. (but for now is very alpha!)
 
+Define an entity, corresponding to a table in a database (user_roles in this example):
+
+<pre>
+<code>
+var UserRole = Entity.create({type: 'user_role', table:'user_roles'}).define([
+    { id:Fields.PrimaryKeyField() },
+    { name: Fields.StringField() }
+]);
+</code>
+</pre>
+
+Get a single entity by id:
+
+<pre><code>
+  dorm.get(e.UserRole, 1234);
+</code></pre>
+
+With a where:
+
+<pre><code>
+dorm.get(Entities.Node, {
+    where : {
+        id : {
+            cmp:'=',
+            value:1
+        }
+    }
+});
+
+TODO: add more detailed examples.
+
+</code></pre>
+
 *Supported Databases:*
  * PostgreSQL > 8
- * Sqlite3
 
 ## License 
 
