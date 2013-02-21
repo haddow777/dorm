@@ -4,7 +4,7 @@
     },
     "showSql":true,
     "showLineNumbers":true,
-    "debugOutput" : false,
+    "debugOutput" : true,
     "useRowToJson": false,
     "dialect":"postgresql"
 }
