@@ -74,7 +74,8 @@ Using these together with the query engine, we can then build:
 		        join : {
 		            translation : { // freeform join without foreign key in this direction
 		                on: 'id',
-		                type: Entities.Translation,                         where : {
+		                type: Entities.Translation,                         
+		                where : {
 		                    lang:'ENG'
 		                }
 		            }
