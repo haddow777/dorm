@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "pg":"0.6.x",
+    "tedious":"*",
     "expresso":"*",
     "sqlite3":"*",
     "deferred":"*"

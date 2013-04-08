@@ -1,18 +1,23 @@
-var dorm = require('../lib/dorm')
+var dorm = require('../lib/dorm').config(require("../config.json"))
   , Entities = require('./test_entities/entities');
  
 module.exports["test: get Node "] = function (beforeExit, assert){
+
 	dorm.get(Entities.Node, {
+
 	    where : {
 	        id : {
 	            cmp:'=',
 	            value:1
 	        }
 	    },
+
 	    join : {
+
 	        node_type : {
 	            on : 'node_type_id', // must be a ForeignKeyField!
 	        },
+
 	        description : {
 	            on : 'description_trans_id',
 	            join : {
@@ -25,15 +30,18 @@ module.exports["test: get Node "] = function (beforeExit, assert){
 	                }
 	            } 
 	        },
+
 	        name : {
 	            on : 'name_trans_id', //field in THIS table
 	            join : {
 	                translation : { // freeform join without foreign key in this direction
 	                    on: 'id',
 	                    type: Entities.Translation, //ONLY needed when you are joining tables without a relationship in this parent
+
 	                    where : {
 	                        lang:'ENG'
 	                    }
+
 	                }
 	            }
 	        }
