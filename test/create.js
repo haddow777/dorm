@@ -1,4 +1,4 @@
-var dorm = require('..')
+var dorm = require('..').config(__dirname+'/../config.json')
   , dbg = require('../lib/debug')
   , util = require('util')
   , e = require('./test_entities/entities');

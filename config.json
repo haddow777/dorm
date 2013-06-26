@@ -1,11 +1,10 @@
 {
     "db": { 
-        "connectionString": "postgres://user:password@localhost:5432/database"
+        "connectionString": "postgres://postgres:test@localhost:5432/ebt"
     },
     "showSql":true,
     "showLineNumbers":true,
-    "debugOutput" : true,
+    "debugOutput" : false,
     "useRowToJson": false,
-    "dialect":"postgresql"
+    "dialect":"tedious"
 }
-
