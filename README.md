@@ -127,6 +127,30 @@ Dorm will then create the following query:
 	AND tra5.lang = $3 -- 'ENG'
 	ORDER BY nod0.name
 
+Transactions
+
+Support for transactions have been added now. It is pretty basic, but allows you control them over multiple Dorm queries. (NOTE: these functions have only been tested using the Postgres functionality of Dorm. For a test, check out dorm-chains library.)
+
+Added functions are:
+
+	dorm.begin()
+
+	dorm.rollback()
+
+	dorm.savepoint("name")
+
+	dorm.rollbackTo("name")
+
+	dorm.commit()
+
+On top of that, there is also a new function for calling stored procedures in the database:
+
+	dorm.runStoredProcedure("name()")
+
+Also, to better manage connections in Postgres, a special function has been added to close it down safely. It should be called at the end of your use of the connection or it can cause your program to hang when finishing.
+
+	dorm.end()
+
 
 *Supported Databases:*
  * PostgreSQL > 8
